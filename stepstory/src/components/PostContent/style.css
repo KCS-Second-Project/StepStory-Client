@@ -1,0 +1,23 @@
+.post-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 20px; 
+    text-align: left;
+  }
+  
+  .post-title {
+    margin-top: 0;
+    margin-bottom: 10px; 
+    color: #333; 
+    font-size: 24px; 
+  }
+  
+  .post-body {
+    margin-top: 0;
+    color: #666; 
+    font-size: 16px; 
+    line-height: 1.6; 
+  }
+  
