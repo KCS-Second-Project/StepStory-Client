@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './style.css';
 
 export default function ImageSlider({ images }) {
-  // 이미지 슬라이더 구현에 필요한 상태 및 로직 추가
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sliderWidth = 600;
+
+  const goPrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const goNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
   return (
     <div className="image-slider">
-      {/* 이미지들을 순환하며 보여주는 UI 구현 */
-        images.map((image, index) => (
-            <img
+      <div className="image-container" style={{
+        transform: `translateX(${-sliderWidth * activeIndex}px)`,
+        width: `${sliderWidth * images.length}px`,
+        }}>
+        {images.map((image, index) => (
+          <img
             key={index}
             src={image.src}
             alt={image.alt}
-            style={{
-                transform: `translateX(${-100 * index}%)`
-            }}
-            />
-        ))
-      }
+            className={`slide ${index === activeIndex ? 'active' : ''}`}
+          />
+        ))}
+      </div>
+      <button onClick={goPrev} className="left-arrow">&lt;</button>
+      <button onClick={goNext} className="right-arrow">&gt;</button>
     </div>
   );
 }
