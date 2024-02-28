@@ -1,0 +1,14 @@
+.post-layout {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .left-section {
+    flex: 1; 
+    flex-grow: 3;
+  }
+  
+  .right-section {
+    flex: 1;
+  }
+  
