@@ -1,0 +1,8 @@
+.comment-button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
