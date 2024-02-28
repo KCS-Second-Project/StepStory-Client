@@ -1,0 +1,28 @@
+.user-profile {
+    display: flex;
+    align-items: center;
+    border-radius: 15px; 
+    padding: 10px; 
+    margin: 20px; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  .user-profile-picture {
+    width: 32px; 
+    height: 32px; 
+    background-color: #ccc; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+  }
+  
+  .user-profile-name {
+    font-size: 16px; 
+    color: #333; 
+  }
+  
+  .user-profile-date {
+    font-size: 12px; 
+    color: #666; 
+    margin-left: 20px; 
+  }
+  
