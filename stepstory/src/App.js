@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import StepStoryComponent from './components/PageLayout/ViewPostLayout';
+// 다른 필요한 스타일 시트나 자산들을 여기에 import 할 수 있습니다.
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StepStoryComponent />
+      {/* 필요하다면 다른 컴포넌트들도 여기에 추가할 수 있습니다. */}
     </div>
   );
 }
