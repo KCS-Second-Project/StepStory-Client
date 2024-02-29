@@ -6,24 +6,24 @@ import PostContent from '../PostContent/PostContent';
 
 const imagesExample = [
     {
-        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/user_2/goormthon_univ_background.png',
-        alt: '구름톤 배경화면',
+        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/11dc170f352750ca9123834677d4065f',
+        alt: '더미1',
     },
     {
-        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/user_2/IMG_9447.jpeg',
-        alt: '나1',
+        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/081f5e9d316ab2b5661b497de3d3fe40',
+        alt: '더미2',
     },
     {
         src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/user_2/IMG_9423.jpeg',
         alt: '나2',
     },
     {
-        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/user_2/IMG_8165.png',
-        alt: '나3',
+        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/02345666935ca959a308624762d8309e',
+        alt: '더미3',
     },
     {
-        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/user_2/IMG_8162.png',
-        alt: '나4',
+        src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/02534ed8e374d687ac448755b738c776',
+        alt: '더미4',
     },
 ]
 
