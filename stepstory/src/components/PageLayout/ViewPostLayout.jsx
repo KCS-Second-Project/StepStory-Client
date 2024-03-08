@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import PostCard from '../PostCard/PostCard';
-// import Map from '../Map/Map';
-// import TravelPeriod from '../TravelPeriod/TravelPeriod';
+import Map from '../Map/Map';
+import TravelPeriod from '../TravelPeriod/TravelPeriod';
 import PostComments from '../PostComments/PostComments';
 import DefaultProfile from '../../assets/images/defaultprofile.png';
 import './style.css';
@@ -59,16 +59,25 @@ const comments = [
   }
 ];
 
+const user = "장동겸"
+const date = "2024.03.08"
+
 export default function ViewPostLayout() {
+  const [showComments, setShowComments] = useState(false);
+
+  const handleCommentButtonClick = () => {
+    setShowComments(prevShowComments => !prevShowComments);
+  };
+
   return (
     <div className="post-container">
         <Header location={ headerLocation } />
         <div className="post-layout">
             <div className="left-section">
-                <PostCard images={imagesExample} profileImage={DefaultProfile} user="장동겸" date="2024.03.08" title={titleExample} content={contentExample}/>
+                <PostCard images={imagesExample} profileImage={DefaultProfile} user={ user } date={ date } title={titleExample} content={contentExample} onCommentClick={handleCommentButtonClick}/>
             </div>
             <div className="right-section">
-                <PostComments comments ={ comments } />
+                {showComments ? <PostComments comments={comments} /> : <><Map /><TravelPeriod /></>}
             </div>
         </div>
     </div>
