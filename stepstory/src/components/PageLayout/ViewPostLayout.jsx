@@ -12,24 +12,24 @@ const headerLocation = "서울시 가산디지털단지"
 
 const imagesExample = [
   {
-      src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/11dc170f352750ca9123834677d4065f',
-      alt: '더미1',
+      src: 'https://stepstory.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Image_2024-03-09-03-00-37.jpeg',
+      alt: '가산디지털단지 8번출구',
   },
   {
-      src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/081f5e9d316ab2b5661b497de3d3fe40',
-      alt: '더미2',
+    src: 'https://stepstory.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Image_2024-03-09-03-00-35.jpeg',
+    alt: '가산 디지털 단지 가는 지하철',
   },
   {
-      src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/user_2/IMG_9423.jpeg',
-      alt: '나2',
+      src: 'https://stepstory.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Image_2024-03-09-03-00-31.jpeg',
+      alt: '카카오 클라우드 스쿨 3 강의실',
   },
   {
-      src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/02345666935ca959a308624762d8309e',
-      alt: '더미3',
+      src: 'https://stepstory.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Image_2024-03-09-03-00-33.jpeg',
+      alt: '카카오 클라우드 스쿨 3 강의실 뒷자리',
   },
   {
-      src: 'https://inglo-bucket.s3.ap-northeast-2.amazonaws.com/news_images/02534ed8e374d687ac448755b738c776',
-      alt: '더미4',
+      src: 'https://stepstory.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Image_2024-03-09-03-00-28.jpeg',
+      alt: '카카오 클라우드 스쿨 3 강의실 오른쪽 자리',
   },
 ]
 

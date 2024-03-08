@@ -20,12 +20,16 @@ export default function ImageSlider({ images }) {
         width: `${sliderWidth * images.length}px`,
         }}>
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src}
-            alt={image.alt}
-            className={`slide ${index === activeIndex ? 'active' : ''}`}
-          />
+          <div className={`slide ${index === activeIndex ? 'active' : ''}`} key={index}>
+            <div className="image-description">
+              <span className="image-number">{index + 1}</span>
+              <span className="image-place">{image.alt}</span>
+            </div>
+            <img className="main-image"
+              src={image.src}
+              alt={image.alt}
+            />
+          </div>
         ))}
       </div>
       <button onClick={goPrev} className="left-arrow">&lt;</button>
