@@ -8,7 +8,7 @@ import DefaultProfile from '../../assets/images/defaultprofile.png';
 import './style.css';
 
 
-const headerLocation = "서울시 가산디지털단지"
+const headerLocation = "서울특별시 가산디지털단지"
 
 const imagesExample = [
   {
