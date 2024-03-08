@@ -1,6 +1,12 @@
+.post-container{
+  height: 100vh;
+}
+
 .post-layout {
     display: flex;
     justify-content: space-between; 
+    background-color: #e2f0ff;
+    height: 100vh;
   }
   
   .left-section {
@@ -10,5 +16,5 @@
   
   .right-section {
     flex: 1;
+    height:100%;
   }
-  
