@@ -1,7 +1,7 @@
 .post-content {
     height: 240px;
     padding: 20px;
-    background-color: #fff;
+    background-color: none;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     margin: 20px; 
@@ -24,7 +24,7 @@
   
   .post-buttons {
     display: flex; 
-    gap: 10px; 
+    gap: 0px; 
   }
 
  .post-body {
