@@ -7,6 +7,11 @@ import PostComments from '../PostComments/PostComments';
 import DefaultProfile from '../../assets/images/defaultprofile.png';
 import './style.css';
 
+const locationsGps = [
+  { lat: 37.5642135, lng: 127.0016985 },
+  { lat: 37.5658859, lng: 126.9754788 },
+  { lat: 37.5507096, lng: 126.9408428 }
+];
 
 const headerLocation = "서울특별시 가산디지털단지"
 
@@ -71,13 +76,13 @@ export default function ViewPostLayout() {
 
   return (
     <div className="post-container">
-        <Header location={ headerLocation } />
+        <Header locationName={ headerLocation } />
         <div className="post-layout">
             <div className="left-section">
                 <PostCard images={imagesExample} profileImage={DefaultProfile} user={ user } date={ date } title={titleExample} content={contentExample} onCommentClick={handleCommentButtonClick}/>
             </div>
             <div className="right-section">
-                {showComments ? <PostComments comments={comments} /> : <><Map /><TravelPeriod /></>}
+                {showComments ? <PostComments comments={comments} /> : <><Map locationsGps={locationsGps} /><TravelPeriod /></>}
             </div>
         </div>
     </div>
