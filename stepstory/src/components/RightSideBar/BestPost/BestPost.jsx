@@ -1,7 +1,7 @@
 import React from 'react';
 import './BestPostStyle.scss';
-import bestPostImg from '../../assets/images/bestpostdummyimg.avif';
-import wanttogo from '../../assets/images/buttons/wanttogobutton.png';
+import bestPostImg from '../../../assets/images/bestpostdummyimg.avif';
+import wanttogo from '../../../assets/images/buttons/wanttogobutton.png';
 
 export default function BestPost ({profile,username,title, wantToGoCount, date, place}) {
     return (

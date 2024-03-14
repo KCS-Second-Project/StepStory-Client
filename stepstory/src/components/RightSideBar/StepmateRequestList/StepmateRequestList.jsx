@@ -1,6 +1,6 @@
 import React from 'react';
-import requestLogo from '../../assets/images/logos/stepmaterequestlogo.png';
-import profileImg from '../../assets/images/defaultprofile.png';
+import requestLogo from '../../../assets/images/logos/stepmaterequestlogo.png';
+import profileImg from '../../../assets/images/defaultprofile.png';
 import './StepmatesRequestListStyle.scss'
 import StepmateRequest from '../StepmateRequest/StepmateRequest';
 
