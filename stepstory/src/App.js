@@ -1,16 +1,15 @@
 import './App.css';
 import React from 'react';
-import ViewPostLayout from './components/PageLayout/ViewPostLayout';
 import profileImg from './assets/images/defaultprofile.png';
-import BestPost from './components/RightSideBar/BestPost/BestPost';
-import StepmateRequestList from './components/RightSideBar/StepmateRequestList/StepmateRequestList';
+import StepmatesBanner from './components/RightSideBar/StepmatesBanner/StepmatesBanner';
+import RightSideBar from './components/RightSideBar/RightSideBar';
 
 
 
 function App() {
   return (
     <div className="App">
-      <StepmateRequestList />
+      <RightSideBar />
     </div>
   );
 }

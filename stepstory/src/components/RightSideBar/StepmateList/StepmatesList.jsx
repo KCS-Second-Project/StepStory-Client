@@ -1,10 +1,10 @@
 import React from 'react';
-import profileImg from '../../assets/images/defaultprofile.png';
-import stepmatesListLogo from '../../assets/images/logos/stepmatelistlogo.png';
+import profileImg from '../../../assets/images/defaultprofile.png';
+import stepmatesListLogo from '../../../assets/images/logos/stepmatelistlogo.png';
 import './style.scss';
 import Stepmate from '../Stepmate/Stepmate';
 
-export default function FriendsMenu(){
+export default function StepmateList(){
     return (
         <div className='list'>
             <div className='list-logo'>

@@ -1,0 +1,35 @@
+.rightSideBar{
+    display:flex;
+    flex-direction: row;
+    height: 100%;   
+}
+
+
+.menu1 {
+    margin-right: -380px;
+    top: 0px;
+    transition-duration: 0.5s ;
+    display: none;
+  }
+
+.menu2 {
+    margin-right: -550px;
+    top: 0px;
+    transition-duration: 0.5s ;
+    display: none;
+
+  }
+  
+.menu1.active {
+    display: block;
+    margin-right: 0px;    
+    transition-duration: 0.5s ;
+  }
+
+.menu2.active {
+    display: block;
+    margin-right: 0px;    
+    transition-duration: 0.5s ;
+    
+  }
+
