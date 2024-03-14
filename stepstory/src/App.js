@@ -1,12 +1,14 @@
 import './App.css';
 import React from 'react';
 import ViewPostLayout from './components/PageLayout/ViewPostLayout';
-import StepmatesButton from './components/Buttons/StepmatesButton/StepmatesButton';
+import profileImg from './assets/images/defaultprofile.png';
+import StepmateList from './components/StepmateList/StepmatesList';
+import StepmatesRequetList from './components/StepmateRequestList/StepmateRequestList';
 
 function App() {
   return (
     <div className="App">
-      <StepmatesButton />
+      <StepmatesRequetList />
     </div>
   );
 }

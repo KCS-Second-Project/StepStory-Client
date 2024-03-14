@@ -1,0 +1,44 @@
+.stepmate{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 20px
+}
+
+.profileImg{
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.username{
+    flex-basis: 200px;
+    width:200px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.follow{
+    flex-basis: 52px;
+    width: 52px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+.follow-request{
+    flex-basis: 52px;
+    width: 52px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    font-size: 10px;
+    text-align: center;
+}
