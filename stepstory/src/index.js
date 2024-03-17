@@ -16,6 +16,7 @@ root.render(
         {/*<Socialsign />*/}
         {/*<Sign />*/}
         {/*<PostStep1 />*/}
+        {/*<App />*/}
     </React.StrictMode>
 );
 

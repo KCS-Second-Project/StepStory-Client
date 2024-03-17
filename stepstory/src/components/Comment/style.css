@@ -1,0 +1,16 @@
+
+.comment-body{
+    text-align:left;
+    margin: 15px 0 0 40px;
+}
+
+.reply-button{
+    color:gray;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: left;
+    justify-content: center;
+    margin:10px 0 0 40px;
+}

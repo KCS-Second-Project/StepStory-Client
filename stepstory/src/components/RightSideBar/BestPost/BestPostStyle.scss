@@ -1,0 +1,66 @@
+.bestPost{
+    display: flex;
+    flex-direction: row;
+    width: 510px;
+    height: 160px;
+    margin: 5px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.bestPostImg{
+    justify-self: flex-start;
+    align-self: center;
+    width: 210px;
+    height: 140px;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+
+.bestPostDescrition{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 10px;
+    
+}
+
+.bestPostUser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .bestPostUserProfileImg{
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .usernameAndWantTogo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+
+        .bestPostUsername{
+            text-align: left;
+            justify-content: flex-start;
+        }
+    
+        .bestPostWantToGoCount{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .bestPostStepImg{
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+
+}
