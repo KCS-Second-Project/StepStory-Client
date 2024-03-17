@@ -1,0 +1,302 @@
+.PostStep {
+    display: flex;
+    flex-direction: column;
+    background: #fff6f6;
+}
+
+.header-pane {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(62deg, #fff0e5 30%, #f6e0dc 80%);
+    border: 1px solid #d0d0d0;
+    font-size: 1em;
+}
+
+.logo {
+    width: 10%; /* 로고 이미지의 가로 크기를 부모 요소의 10%로 설정 */
+    height: auto; /* 이미지의 세로 크기를 가로 크기에 비례하도록 설정 */
+}
+
+.map-location {
+    flex: 1;
+    height: inherit;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.content-pane {
+    display: flex;
+    flex-direction: row;
+    flex: 15;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.upload-image{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    height: inherit;
+    background-color: #e8f1ff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.travel-period{
+    border-radius: 5px;
+    margin: 10px;
+    height: inherit;
+    background-color: #e8f1ff;
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.location{
+    /*가로, 세로 사이즈 수정*/
+    border-radius: 5px;
+    margin: 10px;
+    /*width: max-content;*/
+    height: 450px;
+    width: 700px;
+    background-color: #e8f1ff;
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.calendar{
+    transform: scale(0.95);
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.image-item {
+    position: relative;
+    width: 30%;
+    margin: 1%;
+}
+
+.image-item img {
+    width: 100%;
+    height: 150px;
+}
+
+.image-item button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.remove-btn{
+    display: block;
+    width: 30%;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 8px;
+    text-align: center;
+    background-color: #051c48;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
+}
+
+.remove-btn:hover{
+    background-color: #ffffff;
+    color: tomato;
+    width: auto;
+    font-size: smaller;
+    font-weight: bolder;
+
+}
+
+.btn1 {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
+}
+
+/* 호버 상태일 때 */
+.btn1:hover {
+    background-color: #0056b3; /* 살짝 진한 색상으로 변경 */
+}
+
+/* 클릭 상태일 때 */
+.btn1:active {
+    background-color: #002042; /* 더 진한 색상으로 변경 */
+}
+
+.left-top{
+    flex:1;
+    border-radius: 5px;
+    margin: 10px;
+    /*width: max-content;*/
+    height: inherit;
+    background-color: #e8f1ff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.left-bottom {
+    flex: 1;
+    border-radius: 5px;
+    margin: 10px;
+    width: max-content;
+    height: inherit;
+    background-color: #e8f1ff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.right-section {
+    flex: 1;
+    border-radius: 5px;
+    margin: 10px;
+    width: max-content;
+    height: inherit;
+    background-color: #e8f1ff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button.selected {
+    background-color: #001745; /* 진한 파란색 */
+    color: white;
+}
+
+.pagination-controls {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-top: 10px;
+}
+
+.pagination-controls button {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: #f0f0f0; /* 연한 회색 */
+    color: #f8abab; /* 어두운 글씨 색 */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover {
+    background-color: #fb7b7b; /* 호버 시 조금 더 어두운 회색 */
+}
+
+.pagination-controls button:active{
+    background-color: #581818;
+}
+
+/* 이미지 갤러리의 스타일 */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.crown-icon-wrapper {
+    position: absolute;
+    top: 0; /* 상단 여백 설정 */
+    left: 0; /* 왼쪽 여백 설정 */
+}
+
+.crown-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* 선택된 대표사진 버튼의 스타일 */
+.select-photo {
+    background-color: #c1d6ef;
+    color: #525151;
+    padding: 5px 10px;
+    border: 1px solid #2e4053;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.select-photo:hover{
+    background-color: #758190;
+    color: white;
+}
+
+.select-photo.selected {
+    background-color: #3d90fd;
+    color: white;
+}
+
+/* 페이지 번호의 스타일 */
+.pagination button {
+    margin: 2px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.pagination button.selected {
+    background-color: #002042;
+    color: #fff;
+}
+
+.drag-drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.drag-drop-area:hover {
+    background-color: #a4a4a4;
+}

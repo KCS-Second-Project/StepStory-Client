@@ -1,0 +1,270 @@
+.sign {
+    display: flex; /* Flexbox 레이아웃 적용 */
+}
+
+.left-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 가운데 정렬 */
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(62deg, #fff0e5 30%, #fee6e2 80%);
+    min-height: 100vh; /* 화면 세로를 꽉 채우도록 설정 */
+}
+
+.right-pane {
+    flex: 8;
+    padding: 20px;
+    /*background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #eaf2d6 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%, linear-gradient(135deg, #ea9ab3 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, linear-gradient(225deg, #efcee3 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(315deg, #ea9ab1 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;;
+}
+
+.nickname-val {
+    font-size: 11px;
+    text-align: left; /* 텍스트를 왼쪽 정렬합니다. */
+    margin-top: 10px; /* 위쪽 여백을 10px로 설정합니다. */
+}
+
+
+.logo {
+    width: 100%; /* 로고 이미지의 가로 크기를 100%로 설정하여 부모 요소에 맞춤 */
+    max-width: 200px; /* 최대 가로 크기를 설정 */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.uploadImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가로 방향으로 중앙 배치 */
+    align-items: center; /* 세로 방향으로 중앙 배치 */
+    text-align: center;
+}
+
+.uploadImg img {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 10px; /* 이미지 아래 여백 추가 */
+}
+
+
+.uploadImg:hover{
+    opacity: 0.6;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    width: 100%; /* 버튼들의 가로 크기를 100%로 설정하여 가로로 꽉 차도록 합니다. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 수직 가운데 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
+}
+
+.btn1 {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+    background-color: #2D3250;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
+}
+
+.btn2,
+.btn3 {
+    display: block;
+    width: 25%; /* 버튼 너비를 조정하세요 */
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 13px;
+    background-color: #fcc100; /* btn2 색상 */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
+    margin-left: auto; /* 오른쪽 마진을 auto로 지정하여 오른쪽 정렬합니다. */
+}
+
+.btn3 {
+    background-color: #868686; /* btn3 색상 */
+}
+
+/* 호버 상태일 때 */
+.btn1:hover {
+    background-color: #1a1f3c; /* 살짝 진한 색상으로 변경 */
+}
+
+/* 클릭 상태일 때 */
+.btn1:active {
+    background-color: #002042; /* 더 진한 색상으로 변경 */
+}
+/* 호버 상태일 때 */
+.btn2:hover{
+    background-color: #d0a102;
+}
+
+.btn3:hover {
+    background-color: #535353; /* 살짝 진한 색상으로 변경 */
+}
+
+/* 클릭 상태일 때 */
+.btn2:active{
+    background-color: #806400;
+}
+
+.btn3:active {
+    background-color: #2c2c2c; /* 더 진한 색상으로 변경 */
+}
+
+.add-info-box {
+    background-color: #ffffff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    width: 60%; /* 너비를 자동으로 조정 */
+    height: auto; /* 높이를 자동으로 조정 */
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -40px;
+}
+
+.add-info-box h1 {
+    font-size: 25px; /* 원하는 사이즈로 조정하세요. */
+    text-align: center; /* 가운데 정렬 */
+    margin-bottom: 20px; /* 필요에 따라 여백을 조정하세요. */
+}
+
+.centerAlign {
+    align-self: center;
+}
+
+.id-input{
+    width: 100%; /* add-info-box의 패딩값만큼 너비를 조정합니다. */
+    height: auto;
+    padding: 5px; /* 패딩을 적절히 조정합니다. */
+    margin-top: 10px;
+    /*font-size: 20px;*/
+    flex: 1; /* 아이디 입력 상자를 가능한 한 많은 공간으로 채우도록 설정 */
+    margin-right: 10px; /* 오른쪽 마진 추가 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* 상자 모델을 border-box로 설정합니다. */
+}
+
+.id-input-group {
+    display: flex; /* Flexbox 레이아웃 적용 */
+    justify-content: space-between; /* 요소들 사이에 공간 배치 */
+    width: 100%; /* 너비 100%로 설정 */
+}
+
+.btn-duplicate-check {
+    padding: 5px 10px;
+    background-color: #fcc100;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-duplicate-check:hover {
+    background-color: #9e7e00;
+}
+
+.btn-duplicate-check:active {
+    background-color: #5b4900;
+}
+
+.pw-input{
+    width: 100%; /* add-info-box의 패딩값만큼 너비를 조정합니다. */
+    height: auto;
+    padding: 5px; /* 패딩을 적절히 조정합니다. */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* 상자 모델을 border-box로 설정합니다. */
+}
+
+.nickname-input {
+    width: 100%; /* add-info-box의 패딩값만큼 너비를 조정합니다. */
+    height: auto;
+    padding: 5px; /* 패딩을 적절히 조정합니다. */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* 상자 모델을 border-box로 설정합니다. */
+}
+
+.introduction-input {
+    width: 100%; /* add-info-box의 패딩값만큼 너비를 조정합니다. */
+    height: 100px;
+    padding: 5px; /* 패딩을 적절히 조정합니다. */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: both;
+    box-sizing: border-box; /* 상자 모델을 border-box로 설정합니다. */
+}
+
+#upload-button {
+    display: none;
+}
+
+.add-info-box label {
+    width: 35%;
+    height: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #888;
+    font-size: 13px;
+    border: 1px solid #000000; /* 검정 태두리 추가 */
+}
+
+.preview-image-area {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.preview-image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preview-image-area button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.add-info-box label:hover {
+    color: #d85d78;
+}
+
+
+.btn-duplicate-check {
+    width: auto; /* 너비 자동 조정 */
+    margin-top: 10px;
+    margin-left: 10px; /* 닉네임 입력과의 간격을 위해 왼쪽 여백 추가 */
+}
