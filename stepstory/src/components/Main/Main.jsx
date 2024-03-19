@@ -14,6 +14,7 @@ const LeftPane = () => {
                 </div>
             </div>
             <div className="logout-container">
+                <button className="btn">Write Story&nbsp;&nbsp;✏️</button>
                 <button className="logout-btn">LOGOUT</button>
             </div>
         </div>
