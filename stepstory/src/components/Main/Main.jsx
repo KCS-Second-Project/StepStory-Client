@@ -1,14 +1,20 @@
 import logo from '../../image/logo.svg';
 import './Main.css';
+import MainMap from "../../components/MainMap/MainMap";
 
 // 왼쪽 화면 컴포넌트
 const LeftPane = () => {
     return (
         <div className="left-pane">
-            <img src={logo} alt="Logo" className="logo" />
-            <div className="buttons">
-                <button className="btn">LOGIN</button>
-                <button className="btn">SIGN</button>
+            <div className="left-content">
+                <img src={logo} alt="Logo" className="logo"/>
+                <div className="buttons">
+                    <button className="btn">LOGIN</button>
+                    <button className="btn">SIGN</button>
+                </div>
+            </div>
+            <div className="logout-container">
+                <button className="logout-btn">LOGOUT</button>
             </div>
         </div>
     );
@@ -17,7 +23,7 @@ const LeftPane = () => {
 const RightPane = () => {
     return (
         <div className="right-pane">
-
+            <MainMap/>
         </div>
     );
 };
