@@ -8,15 +8,17 @@ import reportWebVitals from './reportWebVitals';
 import PostStep1 from "./components/PostStep1/step1";
 import Socialsign from "./components/SocialSign/socialsign";
 import Sign from "./components/Sign/sign";
+import Main from "./components/Main/Main";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Login />
+        {/*<Login />*/}
         {/*<Socialsign />*/}
         {/*<Sign />*/}
         {/*<PostStep1 />*/}
         {/*<App />*/}
+        <Main />
     </React.StrictMode>
 );
 
