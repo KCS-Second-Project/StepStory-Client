@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './step1.css';
-import logo from '../../image/logo.svg';
+import logo from '../../image/Blogo.svg';
 import Calendar from "./calendar";
 import crownIcon from '../../image/crown.png';
 import MapComponent from '../Map/Map';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css'; // 스타일 파일을 불러옵니다.
-import logo from '../../image/logo.svg';
+import logo from '../../image/Blogo.svg';
 import kakaoLogin from '../../image/loginKakao.png';
 import googleLogin from '../../image/loginGoogle.png';
 

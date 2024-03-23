@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import logo from './image/logo.svg';
+import logo from './image/Blogo.svg';
 import profileImg from './assets/images/defaultprofile.png';
 import StepmatesBanner from './components/RightSideBar/StepmatesBanner/StepmatesBanner';
 import RightSideBar from './components/RightSideBar/RightSideBar';

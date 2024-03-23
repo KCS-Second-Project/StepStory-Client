@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './socialsign.css';
-import logo from '../../image/logo.svg';
+import logo from '../../image/Blogo.svg';
 import uploadImg from '../../image/uploadImg.png'; // 이미지 파일 임포트
 
 const LeftPane = () => {

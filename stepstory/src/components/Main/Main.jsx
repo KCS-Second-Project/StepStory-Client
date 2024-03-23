@@ -1,4 +1,4 @@
-import logo from '../../image/logo.svg';
+import logo from '../../image/Blogo.svg';
 import './Main.css';
 import Footer from '../Footer/footer';
 import MainMap from "../../components/MainMap/MainMap";
