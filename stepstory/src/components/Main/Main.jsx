@@ -1,9 +1,10 @@
 import logo from '../../image/logo.svg';
 import './Main.css';
+import Footer from '../Footer/footer';
 import MainMap from "../../components/MainMap/MainMap";
 
 // 왼쪽 화면 컴포넌트
-const LeftPane = () => {
+const MainLeftPane = () => {
     return (
         <div className="left-pane">
             <div className="left-content">
@@ -21,7 +22,8 @@ const LeftPane = () => {
     );
 };
 
-const RightPane = () => {
+// 오른쪽 화면 컴포넌트
+const MainRightPane = () => {
     return (
         <div className="right-pane">
             <MainMap/>
@@ -29,13 +31,15 @@ const RightPane = () => {
     );
 };
 
-
 // 전체 화면 컴포넌트
 const Main = () => {
     return (
-        <div className="login">
-            <LeftPane />
-            <RightPane />
+        <div className="main">
+            <div className="main-content">
+                <MainLeftPane />
+                <MainRightPane />
+            </div>
+            <Footer />
         </div>
     );
 };
