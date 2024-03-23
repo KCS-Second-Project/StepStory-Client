@@ -9,6 +9,7 @@ import PostStep1 from "./components/PostStep1/step1";
 import Socialsign from "./components/SocialSign/socialsign";
 import Sign from "./components/Sign/sign";
 import Main from "./components/Main/Main";
+import FriendStory from "./components/FriendStory/FriendStory";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,8 @@ root.render(
         {/*<Sign />*/}
         {/*<PostStep1 />*/}
         {/*<App />*/}
-        <Main />
+        {/*<Main />*/}
+        <FriendStory/>
     </React.StrictMode>
 );
 
