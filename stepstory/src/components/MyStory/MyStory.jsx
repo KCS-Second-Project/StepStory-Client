@@ -1,7 +1,8 @@
 import logo from '../../image/Blogo.svg';
-import './Main.css';
+import './FriendStory.css';
 import Footer from '../Footer/footer';
 import MainMap from "../../components/MainMap/MainMap";
+import FriendpageButton from "../Buttons/FriendpageButton/FriendpageButton";
 
 // 왼쪽 화면 컴포넌트
 const MainLeftPane = () => {
@@ -26,15 +27,16 @@ const MainLeftPane = () => {
 const MainRightPane = () => {
     return (
         <div className="right-pane">
+            <FriendpageButton/>
             <MainMap/>
         </div>
     );
 };
 
 // 전체 화면 컴포넌트
-const Main = () => {
+const MyStory = () => {
     return (
-        <div className="main">
+        <div className="MyStory">
             <div className="main-content">
                 <MainLeftPane />
                 <MainRightPane />
@@ -44,4 +46,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default MyStory;

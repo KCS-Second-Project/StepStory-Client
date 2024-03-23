@@ -19,8 +19,8 @@ root.render(
         {/*<Sign />*/}
         {/*<PostStep1 />*/}
         {/*<App />*/}
-        {/*<Main />*/}
-        <FriendStory/>
+        <Main />
+        {/*<FriendStory/>*/}
     </React.StrictMode>
 );
 
