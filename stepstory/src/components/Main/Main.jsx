@@ -2,6 +2,7 @@ import logo from '../../image/logo.svg';
 import './Main.css';
 import Footer from '../Footer/footer';
 import MainMap from "../../components/MainMap/MainMap";
+import FriendpageButton from "../Buttons/FriendpageButton/FriendpageButton";
 
 // 왼쪽 화면 컴포넌트
 const MainLeftPane = () => {
@@ -26,6 +27,7 @@ const MainLeftPane = () => {
 const MainRightPane = () => {
     return (
         <div className="right-pane">
+            <FriendpageButton/>
             <MainMap/>
         </div>
     );
