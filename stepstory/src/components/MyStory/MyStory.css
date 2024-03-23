@@ -125,8 +125,23 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* 부드러운 전환 효과 */
 }
 
-/* Offcanvas 스타일 (필요한 경우) */
-.offcanvas-end {
-    width: 250px; /* Offcanvas 너비 조정 */
-    /* 추가적인 Offcanvas 스타일 */
+/* 이미지 버튼 스타일 */
+.story-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+/* MyStory 아이콘 스타일 */
+.story-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Write Story 버튼과 MyStory 아이콘 사이 간격 조정 */
+.logout-container {
+    display: flex;
+    align-items: center;
 }
