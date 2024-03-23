@@ -12,7 +12,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-text">
                         <ul className="list-unstyled">
-                            <h5>STEPSTORY</h5>
+                            <h5>KCS TEAM2</h5>
                             <br/>
                             <li>About Us : Hyein, Dongkyum, Inho, ChangHee, Inhong</li>
                             <li>Address : 서울 금천구 가산디지털1로 189 (주)LG 가산 디지털센터</li>
