@@ -22,8 +22,8 @@ const MainLeftPane = () => {
             </div>
             <div className="logout-container">
                 <button className="story-btn"
-                        onMouseEnter={() => setIsHovered(true)} // 마우스가 버튼 위에 있을 때
-                        onMouseLeave={() => setIsHovered(false)} // 마우스가 버튼을 떠날 때
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
                 >
                     {/* 버튼 상태에 따라 이미지 변경 */}
                     <img src={isHovered ? open : close} alt="MyStory" className="story-icon" />
@@ -34,6 +34,7 @@ const MainLeftPane = () => {
         </div>
     );
 };
+
 
 
 // 오른쪽 화면 컴포넌트

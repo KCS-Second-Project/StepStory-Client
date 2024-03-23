@@ -125,24 +125,40 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* 부드러운 전환 효과 */
 }
 
-
-/* 이미지 버튼 스타일 */
-.story-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-/* MyStory 아이콘 스타일 */
+/* Main.css */
 .story-icon {
-    width: 100%;
-    height: 100px;
+    width: 100px;
+    height: 100%;
+    transition: transform 1s, filter 1s;
 }
+
+@keyframes shakeIcon {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); } /* 좌측으로 흔들리는 효과 */
+    75% { transform: translateX(3px); } /* 우측으로 흔들리는 효과 */
+    100% { transform: translateX(0); }
+}
+
+.story-btn{
+    background: none;
+}
+
+.story-btn{
+    background: none;
+    border: none; /* 검정 태두리 제거 */
+    padding: 0; /* 내부 여백 제거 */
+    cursor: pointer;
+}
+
+.story-btn:hover .story-icon {
+    animation: shakeIcon 5s infinite;
+}
+
+.story-icon:hover {
+    filter: grayscale(10%);
+    animation: none;
+}
+
 
 /* Write Story 버튼과 MyStory 아이콘 사이 간격 조정 */
 .logout-container {
