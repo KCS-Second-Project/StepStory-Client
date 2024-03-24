@@ -1,0 +1,57 @@
+.footer {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+}
+
+/* 새로 추가된 스타일 */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 250px; /* 로고 사이즈 조정 */
+    margin-right: 20px; /* 로고와 텍스트 사이 간격 */
+}
+
+.footer h5, .footer ul {
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.footer ul li {
+    list-style: none;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 10px;
+}
+
+.container {
+    width: 100%;
+}

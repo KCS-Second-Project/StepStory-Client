@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './step1.css';
-import logo from '../../image/logo.svg';
+import logo from '../../image/Blogo.svg';
 import Calendar from "./calendar";
 import crownIcon from '../../image/crown.png';
+import MapComponent from '../Map/Map';
 
 function PostStep() {
     const location = '새 게시글 작성하기 (Step1)';
@@ -27,6 +28,12 @@ function PostStep() {
             reader.readAsDataURL(file);
         });
     };
+
+    const locationsGps = [
+        { lat: 37.5642135, lng: 127.0016985 },
+        { lat: 37.5658859, lng: 126.9754788 },
+        { lat: 37.5507096, lng: 126.9408428 }
+    ];
 
     const handleImageSelect = (index) => {
         setSelectedImageIndex(index);
@@ -85,20 +92,17 @@ function PostStep() {
                 <div className="left-section">
                     <div className="left-top" >
                         <div className="travel-period">
-                            <h1>&nbsp;&nbsp;Travel Period</h1>
+                            <h3>&nbsp;&nbsp;Travel Period</h3>
                             <div className="calendar"><Calendar/></div>
                         </div>
                     </div>
                     <div className="left-bottom">
-                        <div className="location">
-                            <h1>&nbsp;&nbsp;Location</h1>
-                            <map/>
-                        </div>
+                        <MapComponent locationsGps={locationsGps} />
                     </div>
                 </div>
                 <div className="right-section">
                     <div className="upload-image" onClick={handleClick}>
-                        <h1>&nbsp;&nbsp;Upload Image</h1>
+                        <h2>&nbsp;&nbsp;Upload Image</h2>
                         <div className="drag-drop-area" onDrop={handleDrop} onDragOver={handleDragOver}>
                             드래그 앤 드롭 또는 클릭하여 이미지 추가
                         </div>
