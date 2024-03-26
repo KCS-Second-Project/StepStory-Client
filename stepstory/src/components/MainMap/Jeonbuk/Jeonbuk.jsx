@@ -22,7 +22,7 @@ export default function Jeonbuk () {
         <>
             <svg id="svg-sprite">
                 <symbol id="paw_jb" viewBox="0 0 249 209.32">
-                    <image href='/오리.png' x="0" y="0" height="150px" width="150px" />
+                    <image href='/image/오리.png' x="0" y="0" height="150px" width="150px" />
                 </symbol>
             </svg>
             <path
