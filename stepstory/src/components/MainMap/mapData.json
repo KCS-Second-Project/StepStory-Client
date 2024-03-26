@@ -1,21 +1,16 @@
 [   {
     "data": {
         "seoul": 56,
-        "busan": 2,
-        "incheon": 2,
-        "gwanju": 2,
-        "ulsan": 2,
-        "sejong": 2,
-        "gyeonggi": 2,
-        "gangwon": 2,
-        "chungbuk": 2,
-        "chungnam": 2,
-        "jeonbuk": 1,
-        "jeonnam": 1,
-        "gyeongbuk": 1,
-        "gyeongnam": 1,
-        "jeju": 1,
-        "DokdoAndUlleungdo": 1
+        "gyeonggi": 12,
+        "gangwon": 52,
+        "chungbuk": 42,
+        "chungnam": 22,
+        "jeonbuk": 11,
+        "jeonnam": 13,
+        "gyeongbuk": 41,
+        "gyeongnam": 31,
+        "jeju": 51,
+        "DokdoAndUlleungdo": 31
         }
     }
 ]

@@ -2,25 +2,6 @@
     display: flex; /* Flexbox 레이아웃 적용 */
 }
 
-.left-pane {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 수평 가운데 정렬 */
-    flex: 1;
-    padding: 20px;
-    background: linear-gradient(62deg, #f3f3f3 30%, #c1c1c1 80%);
-    min-height: 100vh; /* 화면 세로를 꽉 채우도록 설정 */
-}
-
-.right-pane {
-    flex: 8;
-    padding: 20px;
-    /*background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .nickname-val {
     font-size: 11px;
     text-align: left; /* 텍스트를 왼쪽 정렬합니다. */
