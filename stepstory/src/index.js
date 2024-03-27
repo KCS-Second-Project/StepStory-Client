@@ -11,6 +11,8 @@ import Sign from "./components/Sign/Sign.jsx";
 import Main from "./components/Main/Main";
 import FriendStory from "./components/FriendStory/FriendStory.jsx";
 import MyStory from './components/MyStory/MyStory.jsx';
+import MainSeoul from './components/Main/MainSeoul/MainSeoul.jsx';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,9 +22,11 @@ root.render(
         {/* <Sign /> */}
         {/*<PostStep1 />*/}
         {/*<App />*/}
-        <Main />
+        {/* <Main /> */}
         {/* <FriendStory/> */}
         {/* <MyStory /> */}
+        <MainSeoul />
+        
     </React.StrictMode>
 );
 

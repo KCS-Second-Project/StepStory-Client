@@ -1,33 +1,36 @@
-.area_DaU{
+.area_gangseo{
+
+
     &.hovered {
-        .flague {
+        .paw_gangseo {
             animation-play-state: running; // 마우스 호버 시 발자국 애니메이션 실행
             cursor: pointer;
         }
     }
 
     &:not(.hovered) {
-        .flague {
+        .paw_gangseo {
             animation-play-state: paused; // 마우스를 떼면 발자국 애니메이션 정지
         }
     }
 }
 
-.ajax-loader_DaU{
+.ajax-loader_gangseo{
 	position: absolute;
 	transform-origin: 50% 50%;
-	font-size: 80px;
+	font-size: 50px;
 	width: 1em;
-	height: 1em;
-	color: #d31145;
+	height: 2em;
+
   // 뒤의 영역을 맨 위로 
   z-index: 999; 
   pointer-events: none;
-  
-	.flague{
-		width: 1.5em;
-		height: 1em;
-		animation: 2050ms flagueAnimation ease-in-out infinite;
+
+
+	.paw_gangseo{
+		width: 1.2em;
+		height: 0.8em;
+		animation: 2050ms paw_gangseoAnimation ease-in-out infinite;
 		opacity: 0;
   
 		
@@ -51,16 +54,29 @@
 
 	    @for $i from 1 through 2{
         
+    @if($i % 2 == 0){
+        &:nth-child(#{$i}){
+            animation-delay: #{ (($i * -1)+10)*0.25 }s;
+            transform: rotate(0deg) scaleX(-1) translate3d($i*5%, $i*-50%, 0);
+            //animation: ($i/2)*0.5s path1 ease-in-out;
+        }
+    }
+    @else{
+        &:nth-child(#{$i}){
+            animation-delay: #{ (($i * -1)+10)*0.25 }s;
+            transform: rotate(0deg) translate3d($i*-4%, $i*-48%, 0);
+        }
+    }
          
      @if($i == 1){
            &:nth-child(#{$i}){
-            	// animation-delay: #{ (($i * -1)+10)*0.01 }s;
+            	animation-delay: #{ (($i * -1)+10)*0.015 }s;
               transform: rotate(-8deg) translate2d($i*30%, $i*-50%);
             }
       }
       @if($i == 2){
            &:nth-child(#{$i}){
-            	animation-delay: #{ (($i * -1)+10)*0.005 }s;
+            	animation-delay: #{ (($i * -1)+10)*0.0025 }s;
               transform: rotate(-8deg) scaleX(-1) translate2d($i*-15%, $i*-60%);
               //animation: ($i/2)*0.5s path1 ease-in-out;
             }
@@ -84,14 +100,14 @@
 	}
 
 
-.ajax-loader_DaU{
-	top: 17%;
-	right: 10%;
-	transform: rotate(0deg) translate(-50%, 0%);
+.ajax-loader_gangseo{
+  top: 47%;
+  left: 12%;
+	transform: rotate(10deg) translate(-50%, 0%);
  
 }
 
-@keyframes flagueAnimation {
+@keyframes paw_gangseoAnimation {
 	0%{
 		opacity: 1;
 	}
@@ -114,4 +130,3 @@
     transform: rotate(20deg) scaleX(-1) translate3d(-0%, -80%, 0);
   }
 }
-

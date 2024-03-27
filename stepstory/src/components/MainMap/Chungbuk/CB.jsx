@@ -1,7 +1,7 @@
 import React from 'react';
 import './cb.scss';
 
-export default function DaU () {
+export default function CB () {
     return (
         <div className="ajax-loader_cb">
                 <div className="paw_cb disappear">   
