@@ -1,7 +1,7 @@
 .friendpage-buttons {
     position: absolute;
     top: 20px; /* 원하는 위치로 조정 */
-    left: 220px; /* 원하는 위치로 조정 */
+    left: 20%; /* 원하는 위치로 조정 */
     display: flex;
     flex-direction: column;
 }

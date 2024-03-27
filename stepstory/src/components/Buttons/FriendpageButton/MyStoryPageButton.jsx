@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FriendpageButton.css';
+import './myStorypageButton.css';
 
 const FriendpageButton = () => {
     const [activeButton, setActiveButton] = useState('public');
