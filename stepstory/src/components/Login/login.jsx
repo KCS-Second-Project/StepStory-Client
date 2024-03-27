@@ -3,23 +3,12 @@ import './login.css'; // 스타일 파일을 불러옵니다.
 import logo from '../../image/Blogo.svg';
 import kakaoLogin from '../../image/loginKakao.png';
 import googleLogin from '../../image/loginGoogle.png';
+import LeftPane from '../LeftPane/LeftPane';
 
 
-// 왼쪽 화면 컴포넌트
-const LeftPane = () => {
-    return (
-        <div className="left-pane">
-            <img src={logo} alt="Logo" className="logo" />
-            <div className="buttons">
-                <button className="btn">LOGIN</button>
-                <button className="btn">SIGN</button>
-            </div>
-        </div>
-    );
-};
 
 // 오른쪽 화면 컴포넌트
-const RightPane = () => {
+const LoginRightPane = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loginError, setLoginError] = useState(false); // 로그인 에러 상태 추가
@@ -90,10 +79,13 @@ const RightPane = () => {
 
 // 전체 화면 컴포넌트
 const Login = () => {
+    //로그인 정보
+    const loggedInInfo = {isLoggedIn : false};
+
     return (
         <div className="login">
-        <LeftPane />
-            <RightPane />
+            <LeftPane loggedInInfo={loggedInInfo} />
+            <LoginRightPane />
         </div>
     );
 };

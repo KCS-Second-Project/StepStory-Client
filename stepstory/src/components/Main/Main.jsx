@@ -6,12 +6,17 @@ import RightPane from '../RightPane/RightPane';
 
 // 전체 화면 컴포넌트
 const Main = () => {
-    const info = {isLoggedIn: true};
+
+    //로그인 정보
+    const loggedInInfo = {isLoggedIn: true};
+    //페이지 정보
+    const pageInfo = {page: 'main'};
+
     return (
         <div className="main">
             <div className="main-content">
-                <LeftPane props={info}/>
-                <RightPane />
+                <LeftPane loggedInInfo={loggedInInfo}/>
+                <RightPane pageInfo={pageInfo}/>
             </div>
             <Footer />
         </div>
