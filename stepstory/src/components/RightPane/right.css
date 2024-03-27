@@ -1,0 +1,9 @@
+.right-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 8;
+    width: 50%; /* 오른쪽 패널이 전체의 절반을 차지하도록 설정 */
+    padding: 20px;
+    background: linear-gradient(45deg, #f5ecdc 0%, rgb(65, 200, 225) 70%) repeat scroll 0% 0%, linear-gradient(135deg, #008cd9 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, linear-gradient(225deg, #efcee3 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(315deg, #ea9ab1 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
+}

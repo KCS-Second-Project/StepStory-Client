@@ -95,3 +95,23 @@
     cursor: pointer;
     transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
 }
+
+/* 호버 상태일 때 */
+.btn:hover {
+    background-color: #1a1f3c; /* 살짝 진한 색상으로 변경 */
+}
+
+/* 클릭 상태일 때 */
+.btn:active {
+    background-color: #6a839e; /* 더 진한 색상으로 변경 */
+}
+
+
+
+.logout-btn:hover {
+    background-color: #5d627f; /* 살짝 진한 색상으로 변경 */
+}
+
+.logout-btn:active {
+    background-color: #9eb4cc; /* 더 진한 색상으로 변경 */
+}

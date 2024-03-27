@@ -6,21 +6,23 @@ import Login from './components/Login/login.jsx'; // Login 컴포넌트를 impor
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PostStep1 from "./components/PostStep1/step1";
-import Socialsign from "./components/SocialSign/socialsign";
-import Sign from "./components/Sign/sign";
+import Socialsign from "./components/SocialSign/Socialsign.jsx";
+import Sign from "./components/Sign/Sign.jsx";
 import Main from "./components/Main/Main";
-import FriendStory from "./components/FriendStory/FriendStory";
+import FriendStory from "./components/FriendStory/FriendStory.jsx";
+import MyStory from './components/MyStory/MyStory.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        {/*<Login />*/}
-        {/*<Socialsign />*/}
-        {/*<Sign />*/}
+        {/* <Login /> */}
+        {/* <Socialsign /> */}
+        {/* <Sign /> */}
         {/*<PostStep1 />*/}
         {/*<App />*/}
         <Main />
-        {/*<FriendStory/>*/}
+        {/* <FriendStory/> */}
+        {/* <MyStory /> */}
     </React.StrictMode>
 );
 

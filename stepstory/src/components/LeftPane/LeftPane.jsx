@@ -6,10 +6,10 @@ import close from "../../image/CloseD.png"
 import Profile from '../Profile/Profile';
 
 // 상단 로그인에 따른 상태변화
-function UpState(props) {
+function UpState(loggedInInfo) {
 
-    if(props != null){
-        const isLoggedIn = props.isLoggedIn;
+    if(loggedInInfo != null){
+        const isLoggedIn = loggedInInfo.isLoggedIn;
 
         if(isLoggedIn){
             return <Login1 />;
@@ -67,16 +67,16 @@ const Login2 = () => {
 }
 
 //왼쪽 상태 총 표기
-const LeftPane = ({props}) => {
-
+const LeftPane = ({loggedInInfo}) => {
+    
     return (
         <div className="left-pane">
             <div className="left-content">
                 <img src={logo} alt="Logo" className="logo"/>
-                {UpState(props)}
+                {UpState(loggedInInfo)}
             </div>
             <div className="logout-container">
-                {DownState(props)}
+                {DownState(loggedInInfo)}
             </div>
         </div>
     );

@@ -84,7 +84,7 @@ function PostStep() {
     return (
         <div className="PostStep" onDragOver={handleDragOver}>
             <div className="header-pane">
-                <img src={logo} className="logo" alt="logo" />
+                <img src={logo} className="step1Logo" alt="logo" />
                 <div className="map-location">{location}</div>
             </div>
 

@@ -1,19 +1,9 @@
 import React, { useState } from 'react';
 import './socialsign.css';
-import logo from '../../image/Blogo.svg';
 import uploadImg from '../../image/uploadImg.png'; // 이미지 파일 임포트
+import LeftPane from '../LeftPane/LeftPane';
 
-const LeftPane = () => {
-    return (
-        <div className="left-pane">
-            <img src={logo} alt="Logo" className="logo" />
-            <div className="buttons">
-                <button className="btn1">LOGIN</button>
-                <button className="btn1">SIGN</button>
-            </div>
-        </div>
-    );
-};
+
 
 const RightPane = () => {
     const [previewUrl, setPreviewUrl] = useState('');
@@ -70,9 +60,12 @@ const RightPane = () => {
 };
 
 const Socialsign = () => {
+    //로그인 정보
+    const loggedInInfo = {isLoggedIn: false};
+
     return (
         <div className="sign">
-            <LeftPane />
+            <LeftPane loggedInInfo={loggedInInfo} />
             <RightPane />
         </div>
     );
