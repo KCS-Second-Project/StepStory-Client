@@ -8,16 +8,6 @@
     flex: 1; /* Main 컴포넌트의 자식 요소를 동일한 공간으로 채우도록 설정 */
 }
 
-.left-pane {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 50%; /* 왼쪽 패널이 전체의 절반을 차지하도록 설정 */   
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(62deg, #faf7f1 25%, #abe1e0 75%);
-    min-height: 100vh; /* 화면 세로를 꽉 채우도록 설정 */
-}
 
 .right-pane {
     display: flex;
@@ -29,30 +19,9 @@
     background: linear-gradient(45deg, #f5ecdc 0%, rgb(65, 200, 225) 70%) repeat scroll 0% 0%, linear-gradient(135deg, #008cd9 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, linear-gradient(225deg, #efcee3 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(315deg, #ea9ab1 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
 }
 
-.logo {
-    width: 100%; /* 로고 이미지의 가로 크기를 100%로 설정하여 부모 요소에 맞춤 */
-    max-width: 500px; /* 최대 가로 크기를 설정 */
-    height: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
-.btn {
-    display: block;
-    width: 100%;
-    height: 35px;
-    margin-top: 10px;
-    padding: 5px;
-    font-size: 13px;
-    text-align: center;
-    background-color: #2D3250;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
 
-}
+
 /* 호버 상태일 때 */
 .btn:hover {
     background-color: #1a1f3c; /* 살짝 진한 색상으로 변경 */
@@ -63,30 +32,7 @@
     background-color: #6a839e; /* 더 진한 색상으로 변경 */
 }
 
-.left-content {
-    margin-bottom: 20px; /* 로그아웃 버튼과의 간격을 조정할 수 있습니다. */
-}
 
-.logout-container {
-    margin-top: auto; /* 로그아웃 버튼이 상단으로 이동합니다. */
-    width: 100%;
-}
-
-.logout-btn{
-    display: block;
-    width: 100%;
-    height: 35px;
-    padding: 5px;
-    margin-top: 5px;
-    font-size: 13px;
-    text-align: center;
-    background-color: #484e53;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화하도록 추가 */
-}
 
 .logout-btn:hover {
     background-color: #5d627f; /* 살짝 진한 색상으로 변경 */
@@ -127,12 +73,8 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* 부드러운 전환 효과 */
 }
 
-/* Main.css */
-.story-icon {
-    width: 100px;
-    height: 100%;
-    transition: transform 1s, filter 1s;
-}
+
+
 
 @keyframes shakeIcon {
     0% { transform: translateX(0); }
@@ -141,30 +83,4 @@
     100% { transform: translateX(0); }
 }
 
-.story-btn{
-    background: none;
-}
 
-.story-btn{
-    background: none;
-    border: none; /* 검정 태두리 제거 */
-    padding: 0; /* 내부 여백 제거 */
-    cursor: pointer;
-}
-
-.story-btn:hover .story-icon {
-    animation: shakeIcon 5s infinite;
-}
-
-.story-icon:hover {
-    filter: grayscale(10%);
-    animation: none;
-}
-
-
-/* Write Story 버튼과 MyStory 아이콘 사이 간격 조정 */
-.logout-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}

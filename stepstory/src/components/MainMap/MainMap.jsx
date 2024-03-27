@@ -27,7 +27,7 @@ import JB from './Jeonbuk/JB';
 import JN from './Jeonnam/JN';
 import SU from './Seoul/SU';
 
-export default function EditMap3 ()  {
+export default function MainMap ()  {
 
     const [data, setData] = useState(null);
     //지역별 게시글 수 
@@ -40,9 +40,6 @@ export default function EditMap3 ()  {
     
     useEffect(() => {
         if(data){
-            console.log(data);
-            console.log(Object.keys(data))
-            console.log(Object.values(data))
             //<svg>영역 svg로 지정
             const svg = d3.select('svg'); 
 
@@ -54,8 +51,7 @@ export default function EditMap3 ()  {
             const district = Object.keys(data);
             const postCount = Object.values(data);
 
-            console.log(district[0])
-            console.log(postCount[0])
+
 
             // // //게시글 수에 따른 지역색 배정 
             const maxCount = d3.max(postCount);
