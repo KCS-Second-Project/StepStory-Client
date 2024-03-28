@@ -6,7 +6,6 @@
     margin: 10px;
     max-width: 500px;
     height: 300px;
-
     margin: 0 auto;
   }
 
@@ -22,6 +21,8 @@
   .location {
     text-align: left;
     margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
   }
 
   .map {
