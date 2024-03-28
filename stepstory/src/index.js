@@ -24,7 +24,7 @@ root.render(
         {/* <Sign /> */}
         {/*<PostStep1 />*/}
         {/*<App />*/}
-        // <Main />
+        {/* {<Main />} */}
         {/* <FriendStory/> */}
         {/* <MyStory /> */}
         {/* <Main /> */}
