@@ -1,0 +1,31 @@
+{
+    "success": true,
+    "data": {
+      "gangnam": 2,
+      "gangdong": 3,
+      "gangbuk": 1,
+      "gangseo": 3,
+      "gwanak": 3,
+      "gwangjin": 2,
+      "guro": 2,
+      "geumcheon": 2,
+      "nowon": 3,
+      "dobong": 2,
+      "dongdaemun": 2,
+      "dongjak": 3,
+      "mapo": 2,
+      "seodaemun": 2,
+      "seocho": 2,
+      "seongdong": 2,
+      "seongbuk": 1,
+      "songpa": 3,
+      "yangcheon": 3,
+      "yeongdeungpo": 2,
+      "yongsan": 2,
+      "eunpyeong": 2,
+      "jongno": 3,
+      "jung": 1,
+      "jungnang": 2
+    },
+    "error": null
+  }
