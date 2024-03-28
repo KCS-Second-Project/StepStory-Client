@@ -9,15 +9,12 @@ import PostStep1 from "./components/PostStep1/step1";
 import Socialsign from "./components/SocialSign/Socialsign.jsx";
 import Sign from "./components/Sign/Sign.jsx";
 import Main from "./components/Main/Main";
-<<<<<<< HEAD
 import FriendStory from "./components/FriendStory/FriendStory.jsx";
 import MyStory from './components/MyStory/MyStory.jsx';
-=======
 import FriendStory from "./components/FriendStory/FriendStory";
 import ViewPost from './pages/ViewPost/ViewPost.jsx';
 import PostStep2 from "./pages/PostStep2/PostStep2.jsx"
 import PostStep3 from "./pages/PostStep3/PostStep3.jsx"
->>>>>>> 3b552f3 (fix: 여행 기간 달력 css 수정)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,18 +24,14 @@ root.render(
         {/* <Sign /> */}
         {/*<PostStep1 />*/}
         {/*<App />*/}
-<<<<<<< HEAD
-        <Main />
+        // <Main />
         {/* <FriendStory/> */}
         {/* <MyStory /> */}
-=======
         {/* <Main /> */}
         {/*<FriendStory/>*/}
         {<ViewPost/>}
         {/* {<PostStep2/>} */}
         {/* {<PostStep3/>} */}
-
->>>>>>> 3b552f3 (fix: 여행 기간 달력 css 수정)
     </React.StrictMode>
 );
 
