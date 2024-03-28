@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Header from '../Header/Header';
-import PostCard from '../PostCard/PostCard';
-import Map from '../Map/Map';
-import TravelPeriod from '../TravelPeriod/TravelPeriod';
-import PostComments from '../PostComments/PostComments';
-import DefaultProfile from '../../assets/images/defaultprofile.png';
-import './style.css';
+import React, { useState } from "react";
+import Header from "../../components/Header/Header";
+import PostCard from "../../components/PostCard/PostCard";
+import Map from "../../components/Map/Map";
+import TravelPeriod from "../../components/TravelPeriod/TravelPeriod";
+import PostComments from "../../components/PostComments/PostComments";
+import DefaultProfile from "../../assets/images/defaultprofile.png";
+import "./style.css";
 
 const locationsGps = [
   { lat: 37.5642135, lng: 127.0016985 },
@@ -70,7 +70,7 @@ const comments = [
 const user = "장동겸"
 const date = "2024.03.08"
 
-export default function ViewPostLayout() {
+export default function ViewPost() {
   const [showComments, setShowComments] = useState(false);
 
   const handleCommentButtonClick = () => {
@@ -78,13 +78,13 @@ export default function ViewPostLayout() {
   };
 
   return (
-    <div className="post-container">
+    <div className="post-container-view-post">
         <Header locationName={ headerLocation } />
-        <div className="post-layout">
-            <div className="left-section">
+        <div className="post-layout-view-post">
+            <div className="left-panel-view-post">
                 <PostCard images={imagesExample} profileImage={DefaultProfile} user={ user } date={ date } title={titleExample} content={contentExample} onCommentClick={handleCommentButtonClick}/>
             </div>
-            <div className="right-section">
+            <div className="right-panel-view-post">
                 {showComments ? <PostComments comments={comments} /> : <><Map locationsGps={locationsGps} /><TravelPeriod startDate={startDate} endDate={endDate}/></>}
             </div>
         </div>

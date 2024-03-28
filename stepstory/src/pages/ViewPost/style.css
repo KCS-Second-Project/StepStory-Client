@@ -1,0 +1,22 @@
+.post-container-view-post{
+    height: 100vh;
+    background-color: #e2f0ff;
+  }
+  
+  .post-layout-view-post {
+      display: flex;
+      justify-content: space-between; 
+    }
+    
+    .left-panel-view-post {
+      flex: 1; 
+      flex-grow: 3;
+    }
+    
+    .right-panel-view-post {
+      flex: 1;
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      height:100%;
+    }
