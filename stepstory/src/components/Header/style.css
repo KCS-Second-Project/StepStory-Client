@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    background-color: #fff;
   }
   
   .header-logo {
@@ -19,7 +20,7 @@
     text-align: center;
     font-size: 24px;
   }
-  .title{
+  .header-title-text{
     text-align: center;
     margin-right:15%;
   }
