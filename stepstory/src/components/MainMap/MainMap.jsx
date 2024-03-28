@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style.scss';
+import './mainMapStyle.scss';
 import * as d3 from 'd3';
 import sampledata from './mapData.json'
 
