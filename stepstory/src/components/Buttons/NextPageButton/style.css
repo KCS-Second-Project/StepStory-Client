@@ -1,0 +1,8 @@
+.next-page-button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: right;
+    justify-content: right;
+}

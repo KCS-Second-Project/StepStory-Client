@@ -9,7 +9,7 @@ export default function Header({locationName}) {
                 <img src={StepStoryLogo} alt="StepStory Logo" className="header-logo-image" />
             </div>
             <div className="header-title">
-                <h3 className="title">{locationName}</h3>
+                <h3 className="header-title-text">{locationName}</h3>
             </div>
         </div>
     );

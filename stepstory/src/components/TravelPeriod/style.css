@@ -42,7 +42,6 @@
     color: white;
   }
   
-  /* 기존 스타일을 오버라이드하여 오늘 날짜가 선택된 종료 날짜가 아닐 경우에만 적용되도록 함 */
   .custom-calendar .react-calendar__tile--now:not(.highlight-start-end) {
     background: orange;
     color: white;
